@@ -27,3 +27,35 @@ return str1.substr(0, gcd(str1.length(), str2.length()));
 ```
 
 Explanation: This code snippet implements a function for finding the greatest common divisor (GCD) of two strings. It checks if the concatenation of the strings in both orders is equal. If they are, it means there is a common divisor, and the function returns the substring up to the length of the GCD. The GCD is determined by finding the GCD of the lengths of the two strings.
+
+
+
+
+### Code Snippet 443:
+```cpp
+if you need to add an `int` in a vector of `char`, then you need to add, for example:
+
+```cpp
+std::vector<char> ex {'a', 'v', 'b'};
+// If you need to add an integer to a vector of characters,
+// you need to add it as follows:
+// For example, vector<char> ex{'a', 'v', 'b'};
+// To put 2 in place of 'b', you need to type ex[i] = 2 + 48;
+```
+
+To replace 'b' with '2', you can do either:
+
+
+```cpp
+ex[i] = 2 + '0'; // '0' represents zero, and you cannot add more than a 1-digit integer to a char vector at once
+```
+
+Or you can use:
+
+```cpp
+// Convert count to string and update the array
+std::string countStr = std::to_string(count);
+```
+
+This is useful when you need to handle integers with more than one digit in a character vector.
+```
