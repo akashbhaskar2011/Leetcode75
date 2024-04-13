@@ -45,3 +45,6 @@ This function generates all possible subsets of the given array `nums` using a b
 
 
 ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/20230911132238/print-all-subsets.png)
+
+
+
